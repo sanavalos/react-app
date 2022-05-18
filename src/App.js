@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Bienvenidos from "./components/Bienvenidos";
+import Welcome from "./components/Welcome";
+import Formulario from "./components/Formulario";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Bienvenidos name='Pedro' surname='Riquelme'/>
+    <Welcome/>
+    <Formulario/>
+    </>
   );
 }
-
 export default App;
+
+//props {
+//   name: 'Pedro',
+//   surname: 'Riquelme'
+// }
+
+//class Bienvenidos{
+//  constructor(){
+//   this.name = 'Pedro',
+//   this.surname = 'Riquelme'
+//  }
+// }
